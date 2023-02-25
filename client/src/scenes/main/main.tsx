@@ -1,12 +1,20 @@
 import React from "react";
 import 'index.css';
-import { NavBar } from "../../Componets";
+import './main.css'
+import { Navbar } from "../../components/ComponentsGenerals";
 
 type Props = {}
 export const Main = (props:Props) =>{
     return(
         <div className="Main">
-            <NavBar/>
+            <div className='Navbar'>
+                <div className='squartNavbar'>
+                    <div className='logoNavbar'></div>
+                    <div className='search'></div>
+                    <div className='profile'></div>
+                </div>
+            </div>
+            <div className="Tasks"></div>
         </div>
     );
 };
