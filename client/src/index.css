@@ -20,3 +20,25 @@ body{
   margin: 1%;
   background:  linear-gradient(90deg, #FF230D 30%, #E80C34 30%, #FF00B0 30%, #D20CE8 30%, #A50DFF, 30%);
 }
+    
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --pri--color: #A50DFF;
+  --sec-color: #D20CE8;
+  --ter-color: #FF00B0;
+  --cua-color: #E80C34;
+  --qui--color: #FF230D;
+}
