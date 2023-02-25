@@ -7,16 +7,3 @@ body{
   font-family: 'Poppins', sans-serif;
   display: flexbox;
 }
-
-.NavBarInter{
-  height: 15%;
-  width: 15%;
-  background-color: #333323;
-
-}
-.NavBar{
-  height: 13%;
-  width: 98%;
-  margin: 1%;
-  background:  linear-gradient(90deg, #FF230D 30%, #E80C34 30%, #FF00B0 30%, #D20CE8 30%, #A50DFF, 30%);
-}
