@@ -1,8 +1,19 @@
 import React from 'react'
+import { Navbar } from '@components/ComponentsGenerals'
+import './index.css'
 
-const Index = () => {
+type Props={}
+
+const Index = (props:Props) => {
   return (
-    <div>Index</div>
+    <>
+      <div className="conteinerIndex">
+        <Navbar />
+        <div className='index'>
+          hola
+        </div>
+      </div>
+    </>
   )
 }
 
