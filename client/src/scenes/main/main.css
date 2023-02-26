@@ -7,45 +7,18 @@
     "Tasks Posts People";
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 11% 89%;
-    background-color: var(--pri--color);
-}
-.Navbar{
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, var(--pri--color) 0%, var(--cua-color) 35%, var(--qui--color) 100%);
-    grid-area: Navbar;
-    display: grid;
-}
-.NavbarIn{
-    display: grid;
-    margin: .25%;
-    background-color: #333232;
-    grid-template-areas: 
-    "Logo Search Profile"
-    ;
-    grid-template-columns: 15% 70% 15%;
-}
-.LogoNavbar{
-    margin: 3% 20%;
-    grid-area: Logo;
-    background-color: aqua;
-}
-.SearchNavbar{
-    margin: 1% 20%;
-    grid-area: Search;
-    background-color: antiquewhite;
-}
-.ProfileNavbar{
-    margin: 3% 20%;
-    grid-area: Profile;
-    background-color: aquamarine;
-}
-.Tasks{
-    margin: 5%;
-    grid-area: Tasks;
     background-color: white;
-    opacity: .3;
-    border: 1% solid #000;
+}
+
+.Tasks{
+    position: relative;
+    display:grid;
+    grid-area: Tasks;   
+    margin: 5%;
+    background: linear-gradient(45deg, var(--pri--color) 0%, var(--cua-color) 85%);
+    opacity: .6;
+    border-radius: 1vw;
+    overflow: auto;
 }
 .Posts{
     grid-area: Posts;

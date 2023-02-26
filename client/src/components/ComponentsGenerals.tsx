@@ -3,9 +3,12 @@ import "./ComponentsGenerals.css";
 import Image from "@assets/logo_taskit.png";
 import "@components/ComponentsGenerals.css";
 
-export const Navbar = () => {
+type NavbarProps = {
+  color:string
+}
+export const Navbar = ({color}:NavbarProps) => {
   return (
-    <div className="Navbar">
+    <div className={"Navbar "+color}>
       <div className="NavbarIn">
         <div className="LogoNavbar"></div>
         <div className="SearchNavbar"></div>

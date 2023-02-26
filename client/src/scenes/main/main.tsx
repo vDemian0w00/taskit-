@@ -7,7 +7,9 @@ type Props = {};
 export const Main = (props: Props) => {
   return (
     <div className="Main">
-      <Navbar/>
+      <Navbar
+      color={'NavbarPink'}
+      />
       <div className="Tasks"></div>
       <div className="Posts"></div>
       <div className="People"></div>
