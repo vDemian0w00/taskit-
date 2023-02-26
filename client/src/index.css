@@ -60,11 +60,11 @@ body{
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --pri--color: #F25E7A;
+  --pri-color: #F25E7A;
   --sec-color: #022873;
   --ter-color: #035AA6;
   --cua-color: #05C7F2;
-  --qui--color: #F2C063;
+  --qui-color: #F2C063;
 
   --shadow-1: #B3B0AF;
   --shadow-2: #807E7D;
