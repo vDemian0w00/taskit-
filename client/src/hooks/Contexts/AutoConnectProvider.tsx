@@ -1,5 +1,6 @@
 import { useLocalStorage } from "@solana/wallet-adapter-react";
-import { createContext, FC, ReactNode, useContext } from "react";
+import type { FC, ReactNode } from "react";
+import React, { createContext, useContext } from "react";
 
 export interface AutoConnectContextState {
   autoConnect: boolean;
@@ -16,7 +17,7 @@ export function useAutoConnect(): AutoConnectContextState {
 
 export const AutoConnectProvider: FC<{ children: ReactNode }> = ({
   children,
-}: any) => {
+}) => {
   const [autoConnect, setAutoConnect] = useLocalStorage("autoConnect", true);
 
   return (

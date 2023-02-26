@@ -1,33 +1,24 @@
-import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
-import {
-  ConnectionProvider,
-  WalletProvider,
-} from "@solana/wallet-adapter-react";
-import {
-  WalletModalProvider,
-  WalletConnectButton,
-} from "@solana/wallet-adapter-react-ui";
-import { PhantomWalletAdapter } from "@solana/wallet-adapter-wallets";
-import { clusterApiUrl } from "@solana/web3.js";
-import { memo, useMemo } from "react";
+import { ContextProvider } from "@hooks/Contexts/ContextProvider";
+import { memo } from "react";
 import MainNavigator from "./MainNavigator";
-import Profiles from "@scenes/profiles/profiles";
+
+import "@solana/wallet-adapter-react-ui/styles.css";
 
 const Index = memo(() => {
-  const network = WalletAdapterNetwork.Devnet;
+  // const network = WalletAdapterNetwork.Devnet;
 
-  const wallets = useMemo(() => [new PhantomWalletAdapter()], [network]);
-  const endpoint = useMemo(() => clusterApiUrl("devnet"), [network]);
+  // const wallets = useMemo(() => [new PhantomWalletAdapter()], [network]);
+  // const endpoint = useMemo(() => clusterApiUrl("devnet"), [network]);
 
   return (
-    <ConnectionProvider endpoint={endpoint}>
-      <WalletProvider wallets={wallets} autoConnect>
-        <WalletModalProvider>
-          <MainNavigator />
-          <Profiles />
-        </WalletModalProvider>
-      </WalletProvider>
-    </ConnectionProvider>
+    // <ConnectionProvider endpoint={endpoint}>
+    //   <WalletProvider wallets={wallets} autoConnect>
+    //     <WalletModalProvider>
+    <ContextProvider>
+      <MainNavigator />
+    </ContextProvider>
+    //   </WalletProvider>
+    // </ConnectionProvider>
   );
 });
 

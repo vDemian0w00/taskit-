@@ -1,12 +1,11 @@
-import React from "react";
-import "./profiles.css";
+import {
+  WalletConnectButton,
+  WalletMultiButton,
+} from "@solana/wallet-adapter-react-ui";
 import { Navbar } from "../../components/ComponentsGenerals";
-import { clusterApiUrl, LAMPORTS_PER_SOL } from "@solana/web3.js";
-import { useState, useEffect, useCallback } from "react";
-import { useConnection, useWallet } from "@solana/wallet-adapter-react";
+import "./profiles.css";
 import useSolanaAccount from "@hooks/useSolanaAccount";
-import { WalletConnectButton } from "@solana/wallet-adapter-react-ui";
-// import { useWallet } from "@solana/wallet-adapter-react";
+import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 
 const Profiles = () => {
   const { account, transactions } = useSolanaAccount();
@@ -15,10 +14,12 @@ const Profiles = () => {
     <>
       <Navbar />
       <div className="containerMain">
-        {/* {account ? account?.lamports / LAMPORTS_PER_SOL + " SOL" : "No account"} */}
-        <WalletConnectButton  />
+        {account ? account?.lamports / LAMPORTS_PER_SOL + " SOL" : "No account"}
+        {"\n"}
+        {account ? account?.owner.toBase58() : "No account"}
 
-        {/* holaaaaaaaaaaaaaaaa */}
+        {/* <WalletMultiButton /> */}
+        <WalletConnectButton />
       </div>
     </>
   );
