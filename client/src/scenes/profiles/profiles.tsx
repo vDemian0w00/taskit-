@@ -18,8 +18,9 @@ const Profiles = () => {
         {"\n"}
         {account ? account?.owner.toBase58() : "No account"}
 
-        {/* <WalletMultiButton /> */}
-        <WalletConnectButton />
+        <WalletMultiButton />
+        
+        {/* <WalletConnectButton /> */}
       </div>
     </>
   );

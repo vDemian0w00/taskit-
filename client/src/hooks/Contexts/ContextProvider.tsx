@@ -17,9 +17,11 @@ import { SnackbarProvider, useSnackbar } from "notistack";
 import type { FC, ReactNode } from "react";
 import React, { useCallback, useMemo } from "react";
 import { AutoConnectProvider, useAutoConnect } from "./AutoConnectProvider";
+import { useNotify } from "../useNotify";
 
 const WalletContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const { autoConnect } = useAutoConnect();
+  const dispatchToast = useNotify();
 
   const network = WalletAdapterNetwork.Devnet;
 
@@ -36,9 +38,9 @@ const WalletContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const { enqueueSnackbar } = useSnackbar();
   const onError = useCallback(
     (error: WalletError, adapter?: Adapter) => {
-      enqueueSnackbar(
-        error.message ? `${error.name}: ${error.message}` : error.name,
-        { variant: "error" }
+      dispatchToast(
+        "error",
+        error.message ? `${error.name}: ${error.message}` : error.name
       );
       console.error(error, adapter);
     },
