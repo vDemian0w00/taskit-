@@ -5,9 +5,12 @@ import Modal from "@mui/material/Modal";
 import { useState } from "react";
 
 
-export const Navbar = () => {
+type NavbarProps = {
+  color:string
+}
+export const Navbar = ({color}:NavbarProps) => {
   return (
-    <div className="Navbar">
+    <div className={"Navbar "+color}>
       <div className="NavbarIn">
         <div className="LogoNavbar"></div>
         <div className="SearchNavbar"></div>
