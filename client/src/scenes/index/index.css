@@ -2,16 +2,16 @@
 
 :root{
     --pri-color: #F25E7A;
-  --sec-color: #022873;
-  --ter-color: #035AA6;
-  --cua-color: #05C7F2;
-  --qui-color: #F2C063;
- 
-  --shadow-1: #B3B0AF;
-  --shadow-2: #807E7D;
-  --shadow-3: #666564;
-  --shadow-4: #4D4C4B;
-  --shadow-5: #333232;
+    --sec-color: #022873;
+    --ter-color: #035AA6;
+    --cua-color: #05C7F2;
+    --qui-color: #F2C063;
+    
+    --shadow-1: #B3B0AF;
+    --shadow-2: #807E7D;
+    --shadow-3: #666564;
+    --shadow-4: #4D4C4B;
+    --shadow-5: #333232;
 }
 
 /* Base */
@@ -30,10 +30,14 @@
     justify-content: space-between;
 }
 
-.loginButton{   
+.signButton{   
     background-color: transparent;
-    width: 12%;
+    margin-right: 3%;
+    width: 20%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo{
@@ -66,21 +70,60 @@
 }
 
 .Nosotros{
+    background: transparent;
+    border: none;
     grid-area: Nosotros;
     color: #fff;
+    transition:font-size 0.1s;
     font-size: 2.5vh;
+    font-family: 'Poppins', sans-serif;
 }
 
-.Quienes{
+.Nosotros:hover{
+    transition:font-size 0.1s;
+    font-size: 2.7vh;
+}
+
+.Nosotros:active{
+    transform: translateY(5%);
+}
+
+.Objetivo{
+    background: transparent;
+    border: none;
     grid-area: Quienes;
     color: #fff;
     font-size: 2.5vh;
+    transition:font-size 0.1s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Objetivo:hover{
+    transition:font-size 0.1s;
+    font-size: 2.7vh;
+}
+
+.Objetivo:active{
+    transform: translateY(5%);
 }
 
 .Contacto{
+    background: transparent;
+    border: none;
     grid-area: Contacto;
     color: #fff;
     font-size: 2.5vh;
+    transition:font-size 0.1s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Contacto:hover{
+    transition:font-size 0.1s;
+    font-size: 2.7vh;
+}
+
+.Contacto:active{
+    transform: translateY(5%);
 }
 
 .listOptions{
@@ -103,6 +146,25 @@
     width: 55%;
     height: 100%;
     background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contImage{
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 75%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageWorld{
+    width: 25%;
+    height: 50%;
+    position: absolute;
 }
 
 .contLeft{
@@ -117,7 +179,7 @@
     width: 100%;
     height: 60%;
     background-color: transparent;
-    font-size: 8vh;
+    font-size: 5.7vh;
     font-weight: 500;
 }
 
@@ -127,3 +189,70 @@
     background-color: transparent;
     font-size: 2vh;
 }
+
+/* CSS button */
+.button-30 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 5vw;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #ee5370;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'Poppins', sans-serif;
+    height: 30%;
+    width: 35%;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 2.2vh;
+    }
+
+.button-30:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 4px 2px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-4%);
+}
+
+.button-30:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(4%);
+}
+
+.firstText{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 7vh;
+}
+
+.secondText1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;   
+    margin: 3% 10% 3% 10%;
+}
+
+.secondText2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    margin: 3% 10% 3% 10%;
+}
+
+
