@@ -13,13 +13,19 @@ const Profiles = () => {
   return (
     <>
       <Navbar />
-      <div className="containerMain">
-        {account ? account?.lamports / LAMPORTS_PER_SOL + " SOL" : "No account"}
-        {"\n"}
-        {account ? account?.owner.toBase58() : "No account"}
-
-        {/* <WalletMultiButton /> */}
-        <WalletConnectButton />
+      <div className="containerOutNavbar">
+        <div className="containerItems">
+          <form className="containerRoles">
+            <div className="itemUsuario">a</div>
+            <div className="itemExperto">a</div>
+          </form>
+          <div className="pregunta">
+            <div className="textQuestion">
+              ¿Qué tipo de usuario eres?
+            </div>
+          </div>
+        </div>
+        
       </div>
     </>
   );

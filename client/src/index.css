@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;500&display=swap');
 
 body{
-  background-color: #333232;
   padding: 0%;
   margin: 0%;
   font-family: 'Poppins', sans-serif;
@@ -21,8 +20,6 @@ body{
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
@@ -37,6 +34,12 @@ body{
   --ter-color: #035AA6;
   --cua-color: #05C7F2;
   --qui--color: #F2C063;
+
+  --shadow-1: #B3B0AF;
+  --shadow-2: #807E7D;
+  --shadow-3: #666564;
+  --shadow-4: #4D4C4B;
+  --shadow-5: #333232;
 }
 
 a{
