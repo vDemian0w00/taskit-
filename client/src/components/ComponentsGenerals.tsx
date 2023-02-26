@@ -3,13 +3,12 @@ import "./ComponentsGenerals.css";
 
 export const Navbar = () => {
   return (
-    <div className='containerNavbar'>
-        <div className='squartNavbar'>
-            <div className='logoNavbar'>
-            </div>
-            <div className='search'></div>
-            <div className='profile'></div>
-        </div>
+    <div className='Navbar'>
+      <div className="NavBarIn">
+        <div className='LogoNavbar'></div>
+        <div className='SearchingNavbar'></div>
+        <div className='ProfileNavbar'></div>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,23 @@
+.Main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "Navbar Navbar Navbar"
+    "Tasks Posts People";
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 15% 85%;
+    background-color: #333232;
+}
+.Tasks{
+    grid-area: Tasks;
+    background-color: bisque;
+}
+.Posts{
+    grid-area: Posts;
+    background-color: brown;
+}
+.People{
+    background-color: chartreuse;
+    grid-area: People;
+}
