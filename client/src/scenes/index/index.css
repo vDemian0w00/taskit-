@@ -6,7 +6,7 @@
   --ter-color: #035AA6;
   --cua-color: #05C7F2;
   --qui-color: #F2C063;
-
+ 
   --shadow-1: #B3B0AF;
   --shadow-2: #807E7D;
   --shadow-3: #666564;
@@ -30,23 +30,21 @@
     justify-content: space-between;
 }
 
-.loginButton{
-    margin: 0 5% 0 0;
+.loginButton{   
     background-color: transparent;
     width: 12%;
     height: 100%;
 }
 
 .logo{
-    margin: 0 0 0 5%;
+    margin: 0.9% 5%;
     background-color: #fff;
     width: 8%;
     height: 80%;
-    border-radius: 55%;
+    border-radius: 55%; 
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2%;
 }
 
 .image{
