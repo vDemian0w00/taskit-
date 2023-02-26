@@ -1,10 +1,103 @@
+/* Colors */
+
+:root{
+    --pri-color: #F25E7A;
+  --sec-color: #022873;
+  --ter-color: #035AA6;
+  --cua-color: #05C7F2;
+  --qui-color: #F2C063;
+
+  --shadow-1: #B3B0AF;
+  --shadow-2: #807E7D;
+  --shadow-3: #666564;
+  --shadow-4: #4D4C4B;
+  --shadow-5: #333232;
+}
+
+/* Base */
+
 .conteinerIndex{
     width: 100%;
     height: 100vh;
+    background: linear-gradient(135deg, var(--pri-color) 0%, var(--qui-color) 100%);
 }
 
-.index{
-    width: 100%;
+.header{
+    width:100%;
+    height: 20%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.loginButton{
+    margin: 0 5% 0 0;
+    background-color: transparent;
+    width: 12%;
     height: 100%;
-    background-color: blue;
+}
+
+.logo{
+    margin: 0 0 0 5%;
+    background-color: #fff;
+    width: 8%;
+    height: 80%;
+    border-radius: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.image{
+    width: 80%;
+    height: 80%;
+    background-color: transparent;
+}
+
+.otherEle{
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.conteinerBoth{
+    display: flex;
+    width: 100%;
+    height: 80%;
+}
+
+.left{
+    width: 45%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.right{
+    width: 55%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.contLeft{
+    width: 80%;
+    height: 80%;   
+    background-color: transparent;
+    /* Up/Right/Buttom/Left */
+    margin: 10% 0 0 10%;
+}
+
+.centerLeft1{
+    width: 100%;
+    height: 60%;
+    background-color: transparent;
+    font-size: 8vh;
+    font-weight: 500;
+}
+
+.centerLeft2{
+    width: 100%;
+    height: 40%;
+    background-color: transparent;
+    font-size: 2vh;
 }
