@@ -28,6 +28,7 @@ function useSolanaAccount() {
   }, [publicKey, connection]);
 
   useEffect(() => {
+    // console.log(window.solana)
     if (publicKey) {
       const interval = setInterval(init, 1000);
       return () => clearInterval(interval);
