@@ -1,7 +1,9 @@
 import React from "react";
 import "./ComponentsGenerals.css";
-import Image from "@assets/logo_taskit.png";
 import "@components/ComponentsGenerals.css";
+import Modal from "@mui/material/Modal";
+import { useState } from "react";
+
 
 export const Navbar = () => {
   return (
@@ -15,7 +17,7 @@ export const Navbar = () => {
   );
 };
 
-{ 
+{
   /* <div className='containerNavbar'>
         <div className='squartNavbar'>
             <div className='logoNavbar'>
