@@ -1,17 +1,17 @@
 import React from "react";
 import "./ComponentsGenerals.css";
 import "@components/ComponentsGenerals.css";
-import Logo from '@assets/logo_taskit.png';
+import Logo from "@assets/LogoTritaskit.png";
 
-type NavbarProps = {
-  color:string
-}
-export const Navbar = ({color}:NavbarProps) => {
+
+export const Navbar = () => {
   return (
-    <div className={"Navbar "+color}>
+    <div className="Navbar">
       <div className="NavbarIn">
         <div className="LogoNavbar">
-          <div className="CirLogo"><img src={Logo} className='Logo'/></div>
+          <div className="CirLogo">
+            <img src={Logo} className='Logo'/> 
+          </div>
         </div>
         <div className="SearchNavbar">
           <div className="navicon"><i className="fa-solid fa-magnifying-glass"></i></div>

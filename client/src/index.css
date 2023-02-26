@@ -8,12 +8,13 @@ body{
 }
 .Navbar{
   background-color: transparent;
-  width: 100%;
   height: 100%;
+  width: 100%;
   grid-area: Navbar;
-  display: grid;
 }
 .NavbarIn{
+  height: 100%;
+  width: 100%;
   border-radius: 0 0 2vw 2vw;
   display: grid;
   background-color: white;
@@ -23,14 +24,28 @@ body{
   grid-template-columns: 15% 70% 15%;
 }
 .LogoNavbar{
-  margin: 3% 20%;
+  margin: 0 25%;
+  height: 11vh;
+  width: 50%;
   grid-area: Logo;
-  background-color: aqua;
+  
+}
+.CirLogo{
+  width: 100%;
+  height: 100%;
+  background-color: var(--cua-color);
+  border-radius: 50%;
+}
+.Logo{
+  margin: 1vh;
+  width: 80%;
+  height: 11vh;
+  background-color: transparent;
 }
 .SearchNavbar{
   font-size: 2.85vh;
   border-radius: 2vw;
-  margin: 1.3% 20%;
+  margin: 1% 20%;
   grid-area: Search;
   background: linear-gradient(90deg, var(--ter-color) 0%, var(--pri-color) 65%);
   opacity: .4;
@@ -41,8 +56,13 @@ body{
   grid-template-columns: 9% 91%;
 }
 .navicon{
+  color: white;
   grid-area: navicon;
-  padding: 35% 20%;
+  padding: 35% 49%;
+}
+.navicon i{
+  height: 100%;
+  width: 100%;
 }
 .navinput{
   background-color: transparent;
@@ -62,10 +82,24 @@ body{
   width: 100%;
 }
 .ProfileNavbar{
-  margin: 3% 10%;
+  display: grid;
   grid-area: Profile;
   background-color: aquamarine;
+  grid-template-areas: 
+  "PhotoUser NameUser"
+  ;
+  grid-template-columns: 30% 70%;
 } 
+.PhotoUser{
+  height: 100%;
+  width: 100%;
+  background-color: red ;
+}
+.NameUser{
+  height: 100%;
+  width: 100%;
+  background-color: #242424;
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

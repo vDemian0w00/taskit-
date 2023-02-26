@@ -6,15 +6,17 @@
     "Navbar Navbar Navbar"
     "TitTasks TitPosts TitPeople"
     "Tasks Posts People";
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 25% 40% 35%;
     grid-template-rows: 11% 10% 79%;
     background: linear-gradient(90deg, var(--pri--color) 0%, var(--cua-color) 85%);
 
 }
 .TitTasks{
+    height: 90%;
     text-align: center;
     margin: 5% 0;
     font-size: 5vh;
+    padding: 0%;
 }
 .TitPosts{
     text-align: center;
@@ -58,13 +60,3 @@
     overflow: auto;
     background-color: rgba(255, 255, 255, 0.4); 
 }                                                                                                
-.CirLogo{
-    width: 90%;
-    height: 70%;
-    background: linear-gradient(90deg, var(--pri--color) 0%, var(--sec-color) 20%,var(--ter-color) 40%, var(--cua-color)60%,var(--qui-color));
-     border-radius: 50%;
-}
-.Logo{
-    height: 100%;
-    width: 100%;
-}
