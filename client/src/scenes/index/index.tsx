@@ -26,6 +26,7 @@ const style1 = {
   alignItems:'center',
   justifyContent:'center',
   flexDirection:'column',
+  borderRadius: '15vh'
 };
 
 const style2 = {
@@ -43,6 +44,7 @@ const style2 = {
   alignItems:'center',
   justifyContent:'center',
   flexDirection:'column',
+  borderRadius: '15vh'
 };
 
 const style3 = {
@@ -60,6 +62,7 @@ const style3 = {
   alignItems:'center',
   justifyContent:'center',
   flexDirection:'column',
+  borderRadius: '15vh'
 };
 
 
@@ -109,7 +112,7 @@ const Index = (props:Props) => {
                         <div className='firstText'>¿Quiénes somos?</div>
                       </Typography>
                       <Typography id="transition-modal-description1">
-                        <div className="secondText">Somos una empresa llamada "Euclid Tech" conformada por estudiantes de nivel medio superior la cual busca desarrollar software para resolver problemáticas que se presenten en diferentes sectores.</div>
+                        <div className="secondText1">Somos una empresa llamada "Euclid Tech" conformada por estudiantes de nivel medio superior la cual busca desarrollar software para resolver problemáticas que se presenten en diferentes sectores.</div>
                       </Typography>
                     </Box>
                   </Fade>
@@ -165,8 +168,12 @@ const Index = (props:Props) => {
                       <Typography id="transition-modal-title3">
                         <div className='firstText'>Nuestras redes sociales</div>
                       </Typography>
-                      <Typography id="transition-modal-description3 ">
-                        adadad
+                      <Typography id="transition-modal-description3">
+                        <div className='iconsSocial'>
+                          <i className='fa-brands fa-instagram iconIg'><p>Instagram</p></i>
+                          <i className='fa-brands fa-facebook'><p>Facebook</p></i>
+                          <i className='fa-solid fa-envelope'><p>Email</p></i>
+                        </div>
                       </Typography>
                     </Box>
                   </Fade>
