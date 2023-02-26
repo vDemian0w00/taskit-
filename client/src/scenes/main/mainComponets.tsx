@@ -1,3 +1,7 @@
-const pene = ()=>{
-    <div className="log"></div>
-}
+export const Post = ()=>{
+    return(
+      <div className="Post">
+            paosdifja
+      </div>
+    );
+  };
