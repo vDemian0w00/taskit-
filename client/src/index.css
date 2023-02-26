@@ -38,3 +38,7 @@ body{
   --cua-color: #05C7F2;
   --qui--color: #F2C063;
 }
+
+a{
+  text-decoration: none;
+}
