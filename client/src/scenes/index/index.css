@@ -12,7 +12,7 @@
     --shadow-3: #666564;
     --shadow-4: #4D4C4B;
     --shadow-5: #333232;
-}
+} 
 
 /* Base */
 
@@ -40,11 +40,13 @@
     align-items: center;
 }
 
+/* Logo */
+
 .logo{
     margin: 0.9% 5%;
     background-color: #fff;
     width: 8%;
-    height: 80%;
+    height: 75%;
     border-radius: 55%; 
     display: flex;
     justify-content: center;
@@ -255,11 +257,14 @@
     margin: 3% 10% 3% 10%;
 }
 
+/* Social icons */
+
 .iconsSocial{
-    display: grid;
+    display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin-top: 4%;
 }
 
 .iconIg{
@@ -267,5 +272,37 @@
     width: 20%;
     height: 100%;
 }
+
+.socialButtons{
+    background: transparent;
+    border: none;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3vh;
+}
+
+.imagesIcons{
+    width: 70%;
+    height: 80%;
+    background-color: transparent;
+    border-radius: 10vh;
+}
+
+.socialTexts{
+    margin-top: 2vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+}
+
+.iconsS{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 
 
