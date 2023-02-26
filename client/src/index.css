@@ -42,3 +42,7 @@ body{
   --cua-color: #E80C34;
   --qui--color: #FF230D;
 }
+
+a{
+  text-decoration: none;
+}

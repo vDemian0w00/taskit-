@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.css'
 import Logo from '@assets/logo_taskit.png'
-
+ 
 type Props={}
 
 const Index = (props:Props) => {
@@ -15,7 +15,11 @@ const Index = (props:Props) => {
               <img src={Logo} alt="Logo" className='image' />
             </div>
 
-            <div className="otherEle"><a href=""></a></div>
+            <div className="otherEle">
+              <div className='li1'><a href="/" className='Nosotros'>Nosotros</a></div>
+              <div className='li2'><a href="/" className='Quienes'>¿Quiénes somos?</a></div>
+              <div className='li3'><a href="/" className='Contacto'>Contáctanos</a></div>
+            </div>
             <div className='loginButton'><a href=""></a></div>
           </header>
 

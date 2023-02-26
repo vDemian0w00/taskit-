@@ -50,6 +50,7 @@
 }
 
 .image{
+    margin-top: 6%;
     width: 80%;
     height: 80%;
     background-color: transparent;
@@ -58,7 +59,34 @@
 .otherEle{
     width: 40%;
     height: 100%;
-    background-color: transparent;
+    display: grid;
+    grid-template-areas: 
+        "Nosotros Quienes Contacto"
+    ;
+    text-align: center;
+    align-items: center;
+}
+
+.Nosotros{
+    grid-area: Nosotros;
+    color: #fff;
+    font-size: 2.5vh;
+}
+
+.Quienes{
+    grid-area: Quienes;
+    color: #fff;
+    font-size: 2.5vh;
+}
+
+.Contacto{
+    grid-area: Contacto;
+    color: #fff;
+    font-size: 2.5vh;
+}
+
+.listOptions{
+    list-style: none;
 }
 
 .conteinerBoth{
