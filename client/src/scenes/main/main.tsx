@@ -7,14 +7,10 @@ type Props = {}
 export const Main = (props:Props) =>{
     return(
         <div className="Main">
-            <div className='Navbar'>
-                <div className='squartNavbar'>
-                    <div className='logoNavbar'></div>
-                    <div className='search'></div>
-                    <div className='profile'></div>
-                </div>
-            </div>
+            <Navbar/>
             <div className="Tasks"></div>
+            <div className="Posts"></div>
+            <div className="People"></div>
         </div>
     );
 };

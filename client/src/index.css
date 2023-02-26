@@ -5,22 +5,38 @@ body{
   padding: 0%;
   margin: 0%;
   font-family: 'Poppins', sans-serif;
-  display: flexbox;
 }
-
-.NavBarInter{
-  height: 15%;
-  width: 15%;
-  background-color: #333323;
-
+.Navbar{
+    grid-area: Navbar;
+    background: linear-gradient(180deg, var(--pri--color) 0%, var(--sec-color) 35%, var(--ter-color) 100%);
+  }
+.NavBarIn{
+    display: grid;
+    grid-template-areas: 
+    "Logo Searching Profile"
+    ;
+    grid-template-columns: 15% 70% 15%;
+    height: 98%;
+    width: 99%;
+    margin: .2% .5%  ;
+    background-color: #333323;
+  
+  }
+.LogoNavbar{
+    margin: 5% 20% ; 
+    grid-area: Logo;
+    background-color: darkcyan;
 }
-.NavBar{
-  height: 13%;
-  width: 98%;
-  margin: 1%;
-  background:  linear-gradient(90deg, #FF230D 30%, #E80C34 30%, #FF00B0 30%, #D20CE8 30%, #A50DFF, 30%);
+.SearchingNavbar{
+    margin: 1.5% 15%;
+    grid-area: Searching;
+    background-color: yellow;
 }
-    
+.ProfileNavbar{
+    margin: 5% 20% ; 
+    grid-area: Profile;
+    background-color: violet;
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -36,9 +52,9 @@ body{
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --pri--color: #A50DFF;
-  --sec-color: #D20CE8;
-  --ter-color: #FF00B0;
-  --cua-color: #E80C34;
-  --qui--color: #FF230D;
+  --pri--color: #F25E7A;
+  --sec-color: #022873;
+  --ter-color: #035AA6;
+  --cua-color: #05C7F2;
+  --qui--color: #F2C063;
 }
