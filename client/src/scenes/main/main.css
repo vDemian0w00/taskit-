@@ -7,7 +7,7 @@
     "Tasks Posts People";
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 11% 89%;
-    background-color: #333232;
+    background-color: var(--pri--color);
 }
 .Navbar{
     width: 100%;
@@ -41,8 +41,11 @@
     background-color: aquamarine;
 }
 .Tasks{
+    margin: 5%;
     grid-area: Tasks;
-    background-color: bisque;
+    background-color: white;
+    opacity: .3;
+    border: 1% solid #000;
 }
 .Posts{
     grid-area: Posts;
