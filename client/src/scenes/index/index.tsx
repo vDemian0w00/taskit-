@@ -23,6 +23,7 @@ import {
   WalletMultiButton,
 } from "@solana/wallet-adapter-react-ui";
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
+import ROUTES from "@utils/ROUTES";
 
 type Props = {};
 
@@ -259,7 +260,7 @@ const Index = (props: Props) => {
           </div>
 
           <div className="signButton">
-            <button className="button-30">SignUp</button>
+            <Link to={ROUTES.SELECT_PROFILE} className="button-30">SignUp</Link>
           </div>
         </header>
 
@@ -298,8 +299,6 @@ const Index = (props: Props) => {
             </div>
           </div>
         </div>
-
-        <div className="right"></div>
       </div>
     </>
   );

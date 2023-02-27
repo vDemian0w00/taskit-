@@ -17,6 +17,7 @@ import {
 import { findProgramAddressSync } from "@project-serum/anchor/dist/cjs/utils/pubkey";
 import idl from "@services/idl.json";
 import { utf8 } from "@project-serum/anchor/dist/cjs/utils/bytes";
+import { CreateUserParams } from "../../types/generalTypes";
 
 type UserAccount = {
   name: string;
@@ -78,18 +79,31 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
         } catch (e: any) {
           console.log("No user", e);
           setInitialized(false);
+        } finally {
+          setTransactionPending(false);
         }
       }
     };
     start();
   }, [program, publicKey, transactionPending]);
 
-  const createUser = async () => {
+  const createUser = async (params: CreateUserParams) => {
     if (program && publicKey) {
       try {
-        
+        let { email, name, password, rol, } = params;
+        let actType, idiomes;
+        if(rol === "EXPERT") {
+          actType = params.actType;
+          idiomes = params.idiomes;
+        }
+        setTransactionPending(true);
+        const [userPDA] = await findProgramAddressSync(
+          [utf8.encode("user"), publicKey.toBuffer()],
+          program.programId
+        );
+        await program.methods.initUser("");
       } catch (error: any) {
-        console.log("Error", error)
+        console.log("Error", error);
       }
     }
   };
