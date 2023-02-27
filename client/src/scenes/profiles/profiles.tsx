@@ -63,19 +63,19 @@ const Profiles = () => {
               <form className="contenidoModalRegistroEx">
                 <h1 className="tituloModal">Experto</h1>
                 <TextField
-                  id="standard-basic"
+                  id="nombre_exp"
                   label="Nombre"
                   variant="standard"
                   className="inputModalEx"
                 />
                 <TextField
-                  id="standard-basic"
+                  id="correo_exp"
                   label="Correo"
                   variant="standard"
                   className="inputModalEx"
                 />
                 <TextField
-                  id="standard-basic"
+                  id="contrasena_exp"
                   label="Contrasena"
                   variant="standard"
                   className="inputModalEx"
@@ -111,7 +111,7 @@ const Profiles = () => {
                     "Pronunciación"
                   ]}
                   className="inputModalEx"
-                  placeholder="Tipo"
+                  placeholder="Categoria"
                 />
                 <br />
                 <Button variant="contained" className="buttonModal">
@@ -135,7 +135,7 @@ const Profiles = () => {
               <form className="contenidoModalRegistroUs">
                 <h1 className="tituloModal">Usuario</h1>
                 <TextField
-                  id="standard-basic"
+                  id="nombre_usu"
                   label="Nombre"
                   variant="standard"
                   className="inputModal"
