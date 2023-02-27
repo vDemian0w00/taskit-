@@ -268,8 +268,9 @@ const Index = (props: Props) => {
           <div className="left">
             <div className="contLeft">
               <div className="centerLeft1">
-                ¿Quieres saber si lo estás haciendo correctamente? ¡Descúbrelo
-                rápido!
+                ¿Quieres saber si lo estás haciendo correctamente? 
+
+                ¡Descúbrelo rápido!
               </div>
 
               <div className="centerLeft2">
