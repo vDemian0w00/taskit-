@@ -1,7 +1,7 @@
 export const Post = ()=>{
     return(
       <div className="Post">
-            paosdifja
+            <h2>Nombre</h2>
       </div>
     );
   };

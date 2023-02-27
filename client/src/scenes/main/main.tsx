@@ -9,7 +9,22 @@ export const Main = (props: Props) => {
   return (
     <div className="Main">
       <Navbar/>
+      <div className="TitTasks">Tareas</div>
+      <div className="TitPosts">Diarios</div>
+      <div className="TitPeople">Personas</div>
+      <div className="Tasks"></div>
+      <div className="Posts">
+      <Post/>
+      <Post/>
+      <Post/>   
+      <Post/>
+      <Post/>
+      <Post/>
+      <Post/>    
+      <Post/>
 
+      </div>
+      <div className="People"></div>
     </div>
   );
 };

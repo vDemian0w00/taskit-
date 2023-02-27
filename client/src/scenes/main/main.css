@@ -47,10 +47,17 @@
     background-color: rgba(255, 255, 255, 0.4);
 }
 .Post{
+    padding: 2%;
     margin: 2% 0;
     background-color: aliceblue;
-    color: var(--qui-color);
-}       
+    color: var(--pri-color);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.Post h2{
+    margin: 0;
+    font-size: 3vh;
+}
+
 .Posts{
     padding: 5%;
     grid-area: Posts;

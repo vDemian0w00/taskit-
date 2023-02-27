@@ -1,7 +1,7 @@
 import React from "react";
 import "./ComponentsGenerals.css";
 import "@components/ComponentsGenerals.css";
-import Logo from "@assets/LogoTritaskit.png";
+import Logo from "@assets/LogoColors.png";
 
 
 export const Navbar = () => {
