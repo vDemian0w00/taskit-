@@ -1,19 +1,14 @@
-import { Navbar } from "../../components/ComponentsGenerals";
-import "./profiles.css";
-import useSolanaAccount from "@hooks/useSolanaAccount";
-import Modal from "@mui/material/Modal";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
-import Backdrop from "@mui/material/Backdrop";
-import { useState } from "react";
-import Icon from "@mui/material/Icon";
+import { useAppContext } from "@hooks/Contexts/AppProvider";
 import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import PersonIcon from "@mui/icons-material/Person";
-import FormGroup from "@mui/material/FormGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
+import Button from "@mui/material/Button";
+import Modal from "@mui/material/Modal";
+import TextField from "@mui/material/TextField";
 import Multiselect from "multiselect-react-dropdown";
-import { useAppContext } from "@hooks/Contexts/AppProvider";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import "./profiles.css";
+import ROUTES from "@utils/ROUTES";
 
 const Profiles = () => {
   const [open1, setOpen1] = useState(false);
@@ -32,10 +27,6 @@ const Profiles = () => {
 
   return (
     <>
-      <div className="containerNavbar">
-        <Navbar nameusu={"Gustrago"} />
-      </div>
-
       <div className="containerOutNavbar">
         <div className="containerItems">
           <form className="containerRoles">
@@ -47,7 +38,7 @@ const Profiles = () => {
                 </div>
                 <div>
                   <p className="descripcionItem">
-                    ¿Eres un experto en algún tema? ¿Quieres ganar dinero
+                    ¿Eres un experto en algún idioma? ¿Quieres ganar dinero
                     ayudando a otros? ¡Registrate como Experto!
                   </p>
                 </div>
@@ -69,24 +60,25 @@ const Profiles = () => {
               <form className="contenidoModalRegistroEx">
                 <h1 className="tituloModal">Experto</h1>
                 <TextField
-                  id="standard-basic"
+                  id="nombre_exp"
                   label="Nombre"
                   variant="standard"
                   className="inputModalEx"
                 />
                 <TextField
-                  id="standard-basic"
+                  id="correo_exp"
                   label="Correo"
                   variant="standard"
                   className="inputModalEx"
                 />
                 <TextField
-                  id="standard-basic"
+                  id="contrasena_exp"
                   label="Contrasena"
                   variant="standard"
                   className="inputModalEx"
                   type="password"
                 />
+                <br />
                 <Multiselect
                   isObject={false}
                   onKeyPressFn={function noRefCheck() {}}
@@ -98,27 +90,25 @@ const Profiles = () => {
                     "Francés",
                     "Alemán",
                     "Italiano",
-                    "Portugués"
+                    "Portugués",
                   ]}
                   className="inputModalEx"
                   placeholder="Idioma(s)"
                 />
+                <br />
                 <Multiselect
                   isObject={false}
                   onKeyPressFn={function noRefCheck() {}}
                   onRemove={function noRefCheck() {}}
                   onSearch={function noRefCheck() {}}
                   onSelect={function noRefCheck() {}}
-                  options={[
-                    "Redacción",
-                    "Interpretación",
-                    "Pronunciación"
-                  ]}
+                  options={["Redacción", "Interpretación", "Pronunciación"]}
                   className="inputModalEx"
-                  placeholder="Tipo"
+                  placeholder="Categoria"
                 />
+                <br />
                 <Button variant="contained" className="buttonModal">
-                  Enviar
+                  <Link to={ROUTES.MAIN}>Enviar</Link>
                 </Button>
               </form>
             </Modal>
@@ -138,7 +128,7 @@ const Profiles = () => {
               <form className="contenidoModalRegistroUs">
                 <h1 className="tituloModal">Usuario</h1>
                 <TextField
-                  id="standard-basic"
+                  id="nombre_usu"
                   label="Nombre"
                   variant="standard"
                   className="inputModal"
@@ -156,7 +146,7 @@ const Profiles = () => {
                   className="inputModal"
                   type="password"
                 />
-
+                <br />
                 <Button variant="contained" className="buttonModal">
                   Enviar
                 </Button>

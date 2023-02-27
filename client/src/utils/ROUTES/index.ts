@@ -4,6 +4,7 @@ const ROUTES = {
   MAIN: "/main",
 
   SELECT_PROFILE: "/select-profile",
+  CONFIG: "/config",
 
   ACCEPTED_TASK:"/accepted-task",
   POSTED_TASK:"/posted-task",
