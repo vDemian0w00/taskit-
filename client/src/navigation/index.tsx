@@ -3,22 +3,15 @@ import { memo } from "react";
 import MainNavigator from "./MainNavigator";
 
 import "@solana/wallet-adapter-react-ui/styles.css";
+import { AppProvider } from "@hooks/Contexts/AppProvider";
 
 const Index = memo(() => {
-  // const network = WalletAdapterNetwork.Devnet;
-
-  // const wallets = useMemo(() => [new PhantomWalletAdapter()], [network]);
-  // const endpoint = useMemo(() => clusterApiUrl("devnet"), [network]);
-
   return (
-    // <ConnectionProvider endpoint={endpoint}>
-    //   <WalletProvider wallets={wallets} autoConnect>
-    //     <WalletModalProvider>
     <ContextProvider>
-      <MainNavigator />
+      <AppProvider>
+        <MainNavigator />
+      </AppProvider>
     </ContextProvider>
-    //   </WalletProvider>
-    // </ConnectionProvider>
   );
 });
 
