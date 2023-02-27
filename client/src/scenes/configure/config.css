@@ -1,0 +1,215 @@
+.containerMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(244, 234, 233, .9);
+}
+.containerBodySeccion{
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+    width: 100vw;
+    background: white;
+    box-shadow: 0vw 0vw 6vw 0vw var(--shadow-2);
+}
+.containerForm{
+    position: relative;
+    margin: 5% 50%;
+    flex-direction: column;
+    height: 80%;
+    width: 40%;
+    background-color: transparent;
+    flex-direction: column;
+    display: flex;
+    
+}
+.containerLevel1{
+    position: relative;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    height: 24%;
+    width: 100%;
+    background-color: transparent;
+    color: var(--pri-color);
+}
+.titleForm{
+    position: relative;
+    margin-top: 6%;
+    left: 0%;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    width: auto;
+    background-color: transparent;
+    font-size: 3vw;
+}
+.containerLevel2{
+    position: relative;
+    top: 0%;
+    left: 4.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 16%;
+    width: 90%;
+    background-color: transparent;
+}
+.containerLevel3{
+    position: relative;
+    top: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 16%;
+    width: 100%;
+    background-color: transparent;
+}
+.containerLevel4{
+    position: relative;
+    top: 0%;
+    left: 4.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 16%;
+    width: 90%;
+    background-color: transparent;
+}
+.containerLevel5{
+    position: relative;
+    top: 6%;
+    display: flex;
+    flex-direction: row;
+    height: 12%;
+    width: 60%;
+    background-color: transparent;
+    margin: auto;
+}
+.containerButton{
+    position: relative;
+    display: flex;
+    padding: 2% 5% 2% 5%;; 
+    height: auto;
+    width: auto;
+    margin: auto;
+    background-color: var(--qui-color);
+    box-shadow: 0vw 0.2vw 2vw 0vw var(--shadow-1);
+    border-radius: 1vw;
+    transition: .5s;
+}
+.containerButton:hover{
+    box-shadow: 0vw 0.2vw 1vw 0vw var(--shadow-1);
+    transition: .5s;
+}
+.containerLabels{
+    position: relative;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    margin-right: 10%;
+}
+.containerPerfilLeft{
+    position: absolute;
+    left: 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 36%;
+    border-radius: 4vw;
+    background: linear-gradient(20deg, var(--pri-color) 0%, var(--qui-color) 100%);
+    box-shadow: 0vw 1vw 3vw 0vw var(--shadow-5);
+
+}
+.containerIntPerfilComplete{
+    position: relative;
+    top: 10%;
+    display: fixed;
+    height: 32%;
+    width: 40%;
+    margin: auto;
+    background-color: transparent;
+}
+.containerImageProfile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(169, 99, 99, 0.257);
+    border-radius: 50%;
+    box-shadow: 0vw .1vw 6vw 0vw var(--shadow-5);
+}
+.containerData{
+    position: relative;
+    top: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 46%;
+    width: 90%;
+    margin: 5%;
+    background-color: transparent;
+}
+.textWelcome{
+    position: relative;
+    top: 0%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    width: 80%;
+    background-color: transparent;
+    font-weight: 300;
+    font-size: 2vw;
+}
+.buttonEdit{
+    position: relative;
+    margin-top: 10%;
+    align-items: center;
+    height: 20%;
+    width: 60%;
+    background-color: rgba(245, 245, 245, 0.6);
+    border-radius: 1.3vw;
+    font-weight: 500;
+    font-size: 1.5vw;
+    color: var(--pri-color);
+    flex-direction: row;
+    display: flex;
+}
+.iconEdit{
+    margin-left: 10%;
+    position: relative;
+    height: 80%;
+    width: 20%;
+    background-color: transparent;
+}
+.textEditProfile{
+    text-align: justify;
+    position: relative;
+    height: 50%;
+    margin: 5%;
+    width: 50%;
+    background-color: transparent;
+}
+

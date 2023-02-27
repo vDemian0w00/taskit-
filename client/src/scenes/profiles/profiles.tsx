@@ -30,10 +30,6 @@ const Profiles = () => {
 
   return (
     <>
-      <div className="containerNavbar">
-        <Navbar color={"NavbarBluL"} />
-      </div>
-
       <div className="containerOutNavbar">
         <div className="containerItems">
           <form className="containerRoles">
@@ -45,7 +41,7 @@ const Profiles = () => {
                 </div>
                 <div>
                   <p className="descripcionItem">
-                    ¿Eres un experto en algún tema? ¿Quieres ganar dinero
+                    ¿Eres un experto en algún idioma? ¿Quieres ganar dinero
                     ayudando a otros? ¡Registrate como Experto!
                   </p>
                 </div>
@@ -85,6 +81,7 @@ const Profiles = () => {
                   className="inputModalEx"
                   type="password"
                 />
+                <br/>
                 <Multiselect
                   isObject={false}
                   onKeyPressFn={function noRefCheck() {}}
@@ -101,6 +98,7 @@ const Profiles = () => {
                   className="inputModalEx"
                   placeholder="Idioma(s)"
                 />
+                <br />
                 <Multiselect
                   isObject={false}
                   onKeyPressFn={function noRefCheck() {}}
@@ -115,6 +113,7 @@ const Profiles = () => {
                   className="inputModalEx"
                   placeholder="Tipo"
                 />
+                <br />
                 <Button variant="contained" className="buttonModal">
                   Enviar
                 </Button>
@@ -154,7 +153,7 @@ const Profiles = () => {
                   className="inputModal"
                   type="password"
                 />
-
+                <br/>
                 <Button variant="contained" className="buttonModal">
                   Enviar
                 </Button>
