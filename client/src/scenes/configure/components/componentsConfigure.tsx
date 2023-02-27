@@ -15,6 +15,15 @@ export const ContenedorPerfil = () => {
               </div>
               <div className="textEditProfile">Editar Perfil</div>
             </div>
+            <div className='tittleAboutMe'>Acerca de mi</div>
+            <textarea className='containerAboutMe'>
+                        {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed euismod, nisl nec tincidunt lacinia, nunc est
+                        condimentum nunc, euismod ultricies nisl nunc eget
+                        mauris. Sed euismod, nisl nec tincidunt lacinia, nunc est
+                        condimentum nunc, euismod ultricies nisl nunc eget
+                        mauris. */}
+            </textarea>
           </div>
         </div>
   )

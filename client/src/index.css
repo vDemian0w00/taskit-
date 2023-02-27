@@ -71,6 +71,8 @@ body{
   --shadow-3: #666564;
   --shadow-4: #4D4C4B;
   --shadow-5: #333232;
+
+  --font: 'Poppins', sans-serif;
 }
 
 a{
