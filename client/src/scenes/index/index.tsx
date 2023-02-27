@@ -72,8 +72,6 @@ const style3 = {
   borderRadius: '15vh'
 };
 
-
-
 const Index = (props: Props) => {
   const [open1, setOpen1] = React.useState(false);
   const handleOpen1 = () => setOpen1(true);
@@ -119,7 +117,7 @@ const Index = (props: Props) => {
                       <div className='firstText'>¿Quiénes somos?</div>
                     </Typography>
                     <Typography id="transition-modal-description1">
-                      <div className="secondText1">Somos una empresa llamada "Euclid Tech" conformada por estudiantes de nivel medio superior la cual busca desarrollar software para resolver problemáticas que se presenten en diferentes sectores.</div>
+                      <div className="secondText1">Somos una empresa llamada "Euclid Tech" conformada por estudiantes de nivel medio superior la cual busca desarrollar software para resolver problemáticas que se presenten en diferentes sectores en la actualidad. A continuación te presentamos un pequeño organigrama para que puedas conocer a nuestro equipo.</div>                     
                     </Typography>
                   </Box>
                 </Fade>
@@ -148,7 +146,7 @@ const Index = (props: Props) => {
                     </Typography>
                     <Typography id="transition-modal-description2">
                       <div className="secondText1">Misión: Crear software a escala global que resuelva los problemas que afectan al mundo en el que vivimos, para personas de todas las edades.</div><div className='secondText2'>Visión: Nos vemos en 5 años en el top de empresas de desarrollo software, manteniendo los
-                        altos estándares de calidad, así como los valores que Euclid Tech tendrá siempre en cuenta.</div>
+                      altos estándares de calidad, así como los valores que Euclid Tech tendrá siempre en cuenta.</div>                     
                     </Typography>
                   </Box>
                 </Fade>
@@ -185,7 +183,7 @@ const Index = (props: Props) => {
                           </Link>
 
 
-                          <Link to={""} target="_blank" className="socialButtons">
+                          <Link to={"https://www.facebook.com/profile.php?id=100090799624819"} target="_blank" className="socialButtons">
                             <img src={Facebook} alt="LogoFb" className='imagesIcons' />
                             <p className="socialTexts">Facebook</p>
                           </Link>
