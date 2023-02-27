@@ -1,0 +1,21 @@
+/* Colors */
+
+:root{
+    --pri-color: #F25E7A;
+    --sec-color: #022873;
+    --ter-color: #035AA6;
+    --cua-color: #05C7F2;
+    --qui-color: #F2C063;
+    
+    --shadow-1: #B3B0AF;
+    --shadow-2: #807E7D;
+    --shadow-3: #666564;
+    --shadow-4: #4D4C4B;
+    --shadow-5: #333232;
+} 
+
+.conteinerTASK{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--pri-color) 0%, var(--qui-color) 100%);
+}
