@@ -13,7 +13,7 @@ export const Navbar = ({ nameusu }: PropsUser) => {
     <div className="Navbar">
       <div className="ProfileNavbar">
         <div className="PhotoUser">
-          <Link to={"/"}>
+          <Link to={"/config"}>
             <div className="CirUser">
               <img src={Photo} className="photousu" />
             </div>
