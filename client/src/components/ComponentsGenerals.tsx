@@ -7,18 +7,26 @@ import Logo from "@assets/LogoColors.png";
 export const Navbar = () => {
   return (
     <div className="Navbar">
-      <div className="NavbarIn">
-        <div className="LogoNavbar">
-          <div className="CirLogo">
-            <img src={Logo} className='Logo'/> 
+        <div className="ProfileNavbar">
+          <div className="PhotoUser">
+            <div className="CirUser">
+              <div className="CirUserIn">
+
+              </div>
+            </div>
+          </div>
+          <div className="NameUser">
+            <h2>Puto</h2>
+            <p>Filosofo</p>
           </div>
         </div>
         <div className="SearchNavbar">
           <div className="navicon"><i className="fa-solid fa-magnifying-glass"></i></div>
           <div className="navinput"><input type="text" /></div>
         </div>
-        <div className="ProfileNavbar"></div>
-      </div>
+        <div className="LogoNavbar">
+            <img src={Logo} className='Logo'/> 
+        </div>
     </div>
   );
 };
