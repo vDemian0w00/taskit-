@@ -92,10 +92,10 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
       try {
         let { email, name, password, rol, } = params;
         let actType, idiomes;
-        if(rol === "EXPERT") {
-          actType = params.actType;
-          idiomes = params.idiomes;
-        }
+        // if(rol === "EXPERT") {
+        //   actType = params.actType;
+        //   idiomes = params.idiomes;
+        // }
         setTransactionPending(true);
         const [userPDA] = await findProgramAddressSync(
           [utf8.encode("user"), publicKey.toBuffer()],

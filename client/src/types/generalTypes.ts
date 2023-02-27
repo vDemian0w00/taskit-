@@ -68,8 +68,8 @@ const params2: CreateUserParams2<"USER"> = {
   // idiomes: ["INGLES"],
 };
 
-if (params2.rol === "EXPERT") {
-  const expertParams = params2 as CreateUserParams2<"EXPERT">;
-} else if (params2.rol === "USER") {
-  const userParams = params2 as CreateUserParams2<"USER">;
-}
+// if (params2.rol === "EXPERT") {
+//   const expertParams = params2 as CreateUserParams2<"EXPERT">;
+// } else if (params2.rol === "USER") {
+//   const userParams = params2 as CreateUserParams2<"USER">;
+// }
