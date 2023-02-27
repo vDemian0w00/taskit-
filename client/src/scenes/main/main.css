@@ -4,27 +4,118 @@
     display: grid;
     grid-template-areas: 
     "Navbar Navbar Navbar"
+    "TitTasks TitPosts TitPeople"
     "Tasks Posts People";
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 11% 89%;
-    background-color: white;
-}
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 11% 10% 79%;
+    background: linear-gradient(90deg, var(--pri--color) 0%, var(--cua-color) 85%);
 
+}
+.TitTasks{
+    height: 90%;
+    text-align: center;
+    margin: 5% 0;
+    font-size: 5vh;
+    padding: 0%;
+}
+.TitPosts{
+    text-align: center;
+    margin: 2.5% 0;
+    font-size: 5vh;
+}
+.TitPeople{
+    text-align: center;
+    margin: 5% 0;
+    font-size: 5vh;
+}
 .Tasks{
-    position: relative;
-    display:grid;
+    padding: 5%;
     grid-area: Tasks;   
     margin: 5%;
-    background: linear-gradient(45deg, var(--pri--color) 0%, var(--cua-color) 85%);
-    opacity: .6;
     border-radius: 1vw;
     overflow: auto;
+    background-color: transparent;
 }
-.Posts{
-    grid-area: Posts;
-    background-color: brown;
+.Pendients{
+    cursor: pointer;
+    height: 30%;
+    border-radius: 1vw;
+    padding: 2%;
+    margin: 3% 0;
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+.Pendients h1{
+    color: var(--cua-color);
+    margin: 0;
+    font-size:3.5vh;
+}
+.Pendients h2{
+    color: var(--pri-color);
+    margin: 0;
+    font-size: 2.5vh;
+}
+.Pendients p{
+    color: var(--qui-color);
+    margin: 0;
+    font-size: 2vh;
+}
+.Pendients h3{
+    margin: 5% ;
+    color: var(--pri-color);
+    margin: 0;
+    font-size:3vh;
 }
 .People{
-    background-color: chartreuse;
+    padding: 5%;
     grid-area: People;
+    display:grid;
+    margin: 5%;
+    border-radius: 1vw;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.Posts{
+    padding: 3%;
+    grid-area: Posts;
+    margin: 2.5% 3%;
+    border-radius: 1vw;
+    overflow: auto;
+    background-color: transparent; 
+}                                                                                                
+.Post{
+    cursor: pointer;
+    height: 30%;
+    border-radius: 1vw;
+    padding: 2%;
+    margin: 3% 0;
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+.Post h1{
+    color: var(--cua-color);
+    margin: 0;
+    font-size:3.5vh;
+}
+.Post h2{
+    color: var(--pri-color);
+    margin: 0;
+    font-size: 2.5vh;
+}
+.Post p{
+    color: var(--qui-color);
+    margin: 0;
+    font-size: 2vh;
+}
+.MidlePostTask{
+    display: flex;
+    gap: 20%;
+}
+.DesPostTask{
+    color: var(--pri-color);
+    border-radius: 1vw;
+    padding: 1%;
+    overflow: auto;
+    height: 36%;
+    width: 96%;
+    margin: 1% 2%;
+    background-color: rgba(255, 255, 255, .3);
 }

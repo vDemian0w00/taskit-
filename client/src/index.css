@@ -6,47 +6,107 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 .Navbar{
-  width: 100%;
   height: 100%;
-  grid-area: Navbar;
+  width: 100%;
+  border-radius: 0 0 2vw 2vw;
   display: grid;
-}
-.NavbarYe{
-  background-color: var(--qui--color);
-}
-.NavbarBluH{
-  background-color: var(--sec-color);
-}
-.NavbarBluL{
-  background-color: var(--cua-color);
-}
-.NavbarPink{
-  background-color: var(--pri--color);
-}
-.NavbarIn{
-  display: grid;
-  margin: .25%;
-  background-color: #fff;
+  background-color: white;
   grid-template-areas: 
-  "Logo Search Profile"
+  "Profile Search Logo"
   ;
   grid-template-columns: 15% 70% 15%;
-}
-.LogoNavbar{
-  margin: 3% 20%;
-  grid-area: Logo;
-  background-color: aqua;
-}
-.SearchNavbar{
-  margin: 1% 20%;
-  grid-area: Search;
-  background-color: antiquewhite;
+  grid-area: Navbar;
 }
 .ProfileNavbar{
-  margin: 3% 20%;
+  display: grid;
   grid-area: Profile;
-  background-color: aquamarine;
-} 
+  grid-template-areas: 
+  "PhotoUser NameUser"
+  ;
+  grid-template-columns: 40% 60%;
+}
+.PhotoUser{
+  padding: .3vh;
+  height: 90%;
+  width: 90%;
+}
+.CirUser{
+  background-color:var(--shadow-5);
+  height: 96%;
+  width: 96%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.photousu{
+  margin: 0;
+  width: 100%;
+  height:100%;
+  background-color: transparent;
+}
+.NameUser{
+  color: var(--shadow-3);
+  height: 91%;
+  width: 96%;
+  padding: 3% 2%;
+}
+.NameUser h2{
+  margin: 2.5vh .5vw ;
+  font-size: 3vh;
+}
+.SearchNavbar{
+  font-size: 2.85vh;
+  border-radius: 2vw;
+  margin: 1.5vh 20%;
+  height: 8vh;
+  grid-area: Search;
+  background: linear-gradient(90deg, var(--qui-color) 33%, var(--cua-color) 33%,var(--cua-color) 66%, var(--pri--color) 66%);
+  opacity: .7;
+  display: grid;
+  grid-template-areas: 
+  "navicon navinput"
+  ;
+  grid-template-columns: 9% 91%;
+}
+.navicon{
+  margin: 1.7vh 50%;
+  grid-area: navicon;
+}
+.navicon i{
+  height: 100%;
+  width: 100%;
+}
+.navinput{
+  margin: 1.5vh 10%;
+  height: 5vh;
+  width: 80%;
+  background-color: transparent;
+  grid-area: navinput;
+  display: grid;
+}
+.navinput input{
+  padding: 0 0 0 2%;
+  border-radius: 3vw;
+  color: var(--shadow-5);
+  background-color: white;
+  font-size: 2vh;
+  outline: none;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+.LogoNavbar{
+  margin: 0 25%;
+  height: 11vh;
+  width: 50%;
+  grid-area: Logo;
+  
+}
+.Logo{
+  margin: .8vh 1vw;
+  width: 6vw;
+  height: 11vh;
+  background-color: transparent;
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -84,6 +144,6 @@ a{
   border-radius: 1vw;
 }
 ::-webkit-scrollbar-thumb{
-  background: linear-gradient(90deg, var(--pri--color) 0%, var(--cua-color) 35%, var(--qui--color) 100%);
+  background-color: white;
   border-radius: 1vw;
 }

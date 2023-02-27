@@ -33,7 +33,7 @@ const Profiles = () => {
   return (
     <>
       <div className="containerNavbar">
-        <Navbar color={"NavbarBluL"} />
+        <Navbar nameusu={"Gustrago"} />
       </div>
 
       <div className="containerOutNavbar">
