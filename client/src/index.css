@@ -27,7 +27,7 @@ body{
   grid-template-columns: 40% 60%;
 }
 .PhotoUser{
-  padding: 5%;
+  padding: .3vh;
   height: 90%;
   width: 90%;
 }
@@ -35,16 +35,14 @@ body{
   background-color:var(--shadow-5);
   height: 96%;
   width: 96%;
-  padding: 1%;
   border-radius: 50%;
   overflow: hidden;
 }
-.CirUserIn{
-  background-color:white;
-  height: 100%;
+.photousu{
+  margin: 0;
   width: 100%;
-  border-radius: 50%;
-  overflow: hidden;
+  height:100%;
+  background-color: transparent;
 }
 .NameUser{
   color: var(--shadow-3);
@@ -53,13 +51,8 @@ body{
   padding: 3% 2%;
 }
 .NameUser h2{
-  margin: 0;
-  padding: 0%;
-  font-size: 4vh;
-}
-.NameUser p{
-  margin: 1% 10%;
-  font-size: 2vh;
+  margin: 2.5vh .5vw ;
+  font-size: 3vh;
 }
 .SearchNavbar{
   font-size: 2.85vh;
