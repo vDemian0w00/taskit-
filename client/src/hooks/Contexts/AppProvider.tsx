@@ -1,4 +1,12 @@
-import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import {
+  Dispatch,
+  SetStateAction,
+  createContext,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 import * as anchor from "@project-serum/anchor";
 import { PublicKey, SystemProgram } from "@solana/web3.js";
 import {
@@ -10,9 +18,15 @@ import { findProgramAddressSync } from "@project-serum/anchor/dist/cjs/utils/pub
 import idl from "@services/idl.json";
 import { utf8 } from "@project-serum/anchor/dist/cjs/utils/bytes";
 
+type UserAccount = {
+  name: string;
+  profile: PublicKey;
+  profiles: PublicKey[];
+};
+
 type AppContextType = {
-  isMobile: boolean;
-  setIsMobile: (isMobile: boolean) => void;
+  user: UserAccount | undefined;
+  initialized: boolean;
 };
 
 const AppContext = createContext({} as AppContextType);
@@ -28,7 +42,9 @@ export const useAppContext = () => {
 };
 
 export const AppProvider = ({ children }: { children: React.ReactNode }) => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [user, setUser] = useState();
+  const [initialized, setInitialized] = useState(false);
+  const [transactionPending, setTransactionPending] = useState(false);
 
   const anchorWallet = useAnchorWallet();
   const { connection } = useConnection();
@@ -41,30 +57,50 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
         anchorWallet,
         anchor.AnchorProvider.defaultOptions()
       );
-      return new anchor.Program(idl, PROGRAM_KEY, provider);
+      return new anchor.Program(idl as anchor.Idl, PROGRAM_KEY, provider);
     }
   }, [connection, anchorWallet]);
 
-
   useEffect(() => {
     const start = async () => {
+      console.log("Program", program);
       if (program && publicKey) {
         try {
           const [userPDA] = await findProgramAddressSync(
             [utf8.encode("user"), publicKey.toBuffer()],
             program.programId
           );
-          const userAccount = await program.account.userAccount.fetch(userPDA);
+          const user = await program.account.userAccount.fetch(userPDA);
+          if (user) {
+            setInitialized(true);
+          }
+          console.log("User", user);
         } catch (e: any) {
           console.log("No user", e);
+          setInitialized(false);
         }
       }
     };
     start();
-  }, []);
+  }, [program, publicKey, transactionPending]);
+
+  const createUser = async () => {
+    if (program && publicKey) {
+      try {
+        
+      } catch (error: any) {
+        console.log("Error", error)
+      }
+    }
+  };
 
   return (
-    <AppContext.Provider value={{ isMobile, setIsMobile }}>
+    <AppContext.Provider
+      value={{
+        user,
+        initialized,
+      }}
+    >
       {children}
     </AppContext.Provider>
   );

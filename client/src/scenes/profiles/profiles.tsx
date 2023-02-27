@@ -6,9 +6,11 @@ import { Navbar } from "../../components/ComponentsGenerals";
 import "./profiles.css";
 import useSolanaAccount from "@hooks/useSolanaAccount";
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
+import { useAppContext } from "@hooks/Contexts/AppProvider";
 
 const Profiles = () => {
   const { account, transactions } = useSolanaAccount();
+  const { initialized, user } = useAppContext();
 
   return (
     <>
@@ -19,7 +21,7 @@ const Profiles = () => {
         {account ? account?.owner.toBase58() : "No account"}
 
         <WalletMultiButton />
-        
+
         {/* <WalletConnectButton /> */}
       </div>
     </>
