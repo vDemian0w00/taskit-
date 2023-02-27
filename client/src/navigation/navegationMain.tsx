@@ -10,7 +10,7 @@ const navegationMain = (props:Props) => {
     return (
         <Routes>
             <Route index path={'/'} element={<Main />} />
-            <Route path={ROUTES.VIEW_TASK} element={<Task />} />
+            <Route path={ROUTES.VIEW_TASK} element={<Task taskName={'Task Name'} viewTitle={'Section Title'} />} />
             <Route path={'/'}  />
         </Routes>
     )

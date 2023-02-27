@@ -14,8 +14,58 @@
     --shadow-5: #333232;
 } 
 
+/* Maquetado */
+
 .conteinerTASK{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(135deg, var(--pri-color) 0%, var(--qui-color) 100%);
+    background: linear-gradient(-30deg, var(--pri-color) 0%, #9ab6ec 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskAll{
+    border-radius: 5vw;
+    width: 45%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.397);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contTasks{
+    margin: 2.5% 2.5% 2.5% 2.5%;
+    border-radius: 4vw;
+    width: 95%;
+    height: 95%;
+    background-color: var(--shadow-4);
+}
+
+.titleT{
+    border-top-left-radius: 4vw;
+    border-top-right-radius: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6vh;
+    width: 100%;
+    height: 20%;
+    background-color: #022873;
+    font-family: 'Poppins', sans-serif;
+}
+
+.taskName{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    background-color: #05C7F2;
+}
+
+.contTN{
+    margin: 0 5% 0 5%;
 }
