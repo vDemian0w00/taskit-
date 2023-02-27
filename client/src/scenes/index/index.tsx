@@ -80,6 +80,20 @@ const Index = (props: Props) => {
   const [open2, setOpen2] = React.useState(false);
   const handleOpen2 = () => setOpen2(true);
   const handleClose2 = () => setOpen2(false);
+import React from "react";
+import "./index.css";
+import Logo from "@assets/logo_taskit.png";
+import useSolanaAccount from "@hooks/useSolanaAccount";
+import {
+  WalletConnectButton,
+  WalletMultiButton,
+} from "@solana/wallet-adapter-react-ui";
+import { LAMPORTS_PER_SOL } from "@solana/web3.js";
+
+type Props = {};
+
+const Index = (props: Props) => {
+  const { account, transactions } = useSolanaAccount();
 
   const [open3, setOpen3] = React.useState(false);
   const handleOpen3 = () => setOpen3(true);
@@ -240,9 +254,11 @@ const Index = (props: Props) => {
           </div>
         </div>
 
+          <div className="right"></div>
+        </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;

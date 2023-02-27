@@ -6,12 +6,19 @@
     "Navbar Navbar Navbar"
     "Tasks Posts People";
     grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 15% 85%;
-    background-color: #333232;
+    grid-template-rows: 11% 89%;
+    background-color: white;
 }
+
 .Tasks{
-    grid-area: Tasks;
-    background-color: bisque;
+    position: relative;
+    display:grid;
+    grid-area: Tasks;   
+    margin: 5%;
+    background: linear-gradient(45deg, var(--pri--color) 0%, var(--cua-color) 85%);
+    opacity: .6;
+    border-radius: 1vw;
+    overflow: auto;
 }
 .Posts{
     grid-area: Posts;
